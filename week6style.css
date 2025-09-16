@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: linear-gradient(135deg, #fdfdfd, #e6f7ff);
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #4cafef;
+}
+
+section {
+  background: #fff;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+}
+
+button {
+  padding: 10px 15px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #4cafef;
+  color: white;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #2196f3;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background: linear-gradient(135deg, #1e1e2f, #333);
+  color: white;
+}
+
+/* FAQ */
+.faq-answer {
+  display: none;
+  margin: 10px;
+  background: #f0f0f0;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  background: #f9f9f9;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  max-width: 200px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {
+  background: #2196f3;
+  color: white;
+}
+
+/* Tabs */
+.tabs {
+  margin: 20px;
+}
+
+.tab-btn {
+  background: #ddd;
+  margin: 5px;
+}
+
+.tab-btn.active {
+  background: #4cafef;
+  color: white;
+}
+
+.tab-content {
+  display: none;
+  margin-top: 10px;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+/* Toast Notifications */
+#toastContainer {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.toast {
+  background: #333;
+  color: #fff;
+  padding: 12px 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.4s ease;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.toast.success { background: #4caf50; }
+.toast.error { background: #f44336; }
+.toast.info { background: #2196f3; }

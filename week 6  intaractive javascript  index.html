@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="week6styles.css">
+  <script src="week6script.js"></script>
+</head>
+<body>
+  <h1>Interactive Web Page with JavaScript </h1>
+  <p>Explore interactive features like theme toggle, counters, FAQs, dropdowns, tabs, and form validation. </p>
+  <section>
+    <h2> Event Handling Demo</h2>
+    <button id="messageBtn">Click Me</button>
+  </section>
+
+ 
+  <section>
+    <h2>Theme Toggle</h2>
+    <button id="toggleTheme">Switch to Dark Mode </button>
+  </section>
+
+ 
+  <section>
+    <h2>Counter</h2>
+    <button id="counterBtn">Increase Counter</button>
+    <p>Counter: <span id="counter">0</span></p>
+  </section>
+
+  
+  <section>
+    <h2>FAQ Section</h2>
+    <div class="faq">
+      <button class="faq-question">What is this page about?</button>
+      <div class="faq-answer">It’s a demo page to practice JavaScript interactivity.</div>
+
+      <button class="faq-question">How does the counter work?</button>
+      <div class="faq-answer">Each click increases the number shown in the counter.</div>
+
+      <button class="faq-question">How is the form validated?</button>
+      <div class="faq-answer">With JavaScript using conditions and regular expressions.</div>
+    </div>
+  </section>
+
+  
+  <section>
+    <h2> Dropdown Menu</h2>
+    <div class="dropdown">
+      <button id="dropdownBtn">Open Menu </button>
+      <div id="dropdownContent" class="dropdown-content">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section>
+    <h2>Tabbed Interface</h2>
+    <div class="tabs">
+      <button class="tab-btn active" data-tab="tab1">Tab 1</button>
+      <button class="tab-btn" data-tab="tab2">Tab 2</button>
+      <button class="tab-btn" data-tab="tab3">Tab 3</button>
+    </div>
+    <div class="tab-content active" id="tab1">Content for Tab 1</div>
+    <div class="tab-content" id="tab2">Content for Tab 2</div>
+    <div class="tab-content" id="tab3">Content for Tab 3</div>
+  </section>
+
+ 
+  <section>
+    <h2> Form Validation</h2>
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="email">Email:</label>
+      <input type="text" id="email" placeholder="Enter your email">
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" placeholder="Enter a password (min 6 chars)">
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <div id="toastContainer"></div>
+
+ 
+</body>
+</html>
